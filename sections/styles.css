@@ -175,8 +175,8 @@ section {
 
 .organizers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Increased min width */
-  gap: 1rem; /* Added more space between items */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Increased min width */
+  gap: 2rem; /* Added more space between items */
   justify-content: center; /* Centers items in the container */
 }
 
@@ -184,7 +184,8 @@ section {
   width: 100%;
   max-width: 220px; /* Slightly reduced max width */
   border: 1px solid #ddd;
-  padding: 1rem; /* Increased padding for better spacing */
+  border-radius: 10px;
+  padding: 1.5rem; /* Increased padding for better spacing */
   text-align: center;
   background: white; /* Ensures the background is clean */
 }
