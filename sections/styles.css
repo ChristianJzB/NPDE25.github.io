@@ -232,7 +232,8 @@ section {
 .sponsors {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 0.0rem; /* Reduced gap between items */
+  gap: 1.0rem; /* Reduced gap between items */
+  justify-content: center; /* Ensures the grid is centered */
 }
 
 #sponsor h2 {
