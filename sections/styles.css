@@ -507,6 +507,37 @@ h2 {
 
 
 
+#register h2 {
+  color: #041e42;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.btn {
+  padding: 1rem 2rem; /* Bigger button */
+  font-size: 1.2rem; /* Larger text */
+  background: #004aad;
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Slightly rounded corners */
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #00367a;
+}
+
+/* Center the button */
+.btn-container {
+  text-align: center;
+  margin-top: 20px; /* Add spacing if needed */
+}
+
+
+
 
 
 /* Footer */
