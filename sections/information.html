@@ -24,6 +24,16 @@
       <li><a href="information.html">Practical Information</a></li>
     </ul>
   </nav>
+  
+  <!-- Venue Section -->
+  <section id="venue" class="section">
+    <div class="accomodation-container">
+      <h2>Venue</h2>
+
+      <p>The venue is located at...</p>
+  
+   </div>
+  </section>
 
   <!-- Arrive Section -->
   <section id="arrive" class="section">
@@ -33,28 +43,59 @@
       <div class="content-wrapper">
         <div class="text-content">
   
-		  <p>The event will take place at: <br> JCMB <br> Mayfield Rd <br> Edinburgh EH9 3FD <br> United Kingdom</p>
-          
-		  <p>
-           There is a shuttle bus from ...
-          </p>
+        <p>The event will take place at JCMB on the King's Buildings campus.</p>
+        <p>The address is: <br> JCMB <br> Mayfield Rd <br> Edinburgh EH9 3FD <br> United Kingdom</p>
+        
+        <p>To get to Edinburgh:
+          <ul>
+            <li>By plane: Edinburgh Airport is connected to the city by bus (AirLink) and tram.</li>
+            <li>By train: The closest station is Edinburgh Waverley in the city centre.</li>
+            <li>By car: The campus lies north of the Edinburgh Bypass (A720). Take the exit onto A701 and follow until Mayfield Road.</li>
+          </ul>
+        See also <a href="https://transport.ed.ac.uk/travelling-here/kings-buildings">https://transport.ed.ac.uk/travelling-here/kings-buildings</a> for transport information and a campus map.
+        </p>
+
         </div>
+        
         <div class="map">
-          <img src="../images/jcmb.jpg" alt="James Clerk Maxwell Building">
+          <gmp-map
+              center="55.9216819,-3.1736698"
+              zoom="11"
+              map-id="DEMO_MAP_ID"
+              style="height: 400px"
+            >
+              <gmp-advanced-marker
+                position="55.9216819,-3.1736698"
+                title="James Clerk Maxwell Building"
+              ></gmp-advanced-marker>
+            </gmp-map>
+
+            <!-- 
+              The `defer` attribute causes the script to execute after the full HTML
+              document has been parsed. For non-blocking uses, avoiding race conditions,
+              and consistent behavior across browsers, consider loading using Promises. See
+              https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+              for more information.
+              -->
+            <script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta"
+              defer
+            ></script>
         </div>
       </div>
     </div>
   </section>
-
+  
+ 
   <!-- Accomodation Section -->
   <section id="accomodation" class="section">
     <div class="accomodation-container">
-      <h2>Accommodation</h2>
+      <h2>Accommodation and places to visit</h2>
 
       <p>There will be information on accommodation here...</p>
       
       <p>Things to mention on this page:
-        bus or tram to take from the airport to the city centre, which buses go to King's, some hotels around the Cameron Toll area, which would be closest to JCMB, good places to visit in Edinburgh, suggestions for dinner, room and location for catering
+        some hotels around the Cameron Toll area, which would be closest to JCMB, good places to visit in Edinburgh, suggestions for dinner, room and location for catering
       </p>
   
    </div>
