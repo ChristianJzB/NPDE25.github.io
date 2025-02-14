@@ -146,36 +146,24 @@ section {
 }
 
 
-
-
-/* About Section */
-.about-container {
-  max-width: 1000px; /* Adjust width as needed */
+/* Container for all sections */
+.container {
+  max-width: 1200px; /* Adjust width as needed */
   margin: 0 auto;
   padding: 0 2rem; /* Adds padding on left and right */
 }
 
-
-#about h2 {
+#sec h2 {
   color: #041e42;
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 0rem;
 }
-
-
 
 
 /* Organizers Section */
-.committee-container {
-  max-width: 1000px; /* Adjust width as needed */
-  margin: 0 auto;
-  padding: 0 2rem; /* Adds padding on left and right */
-}
-
-
 .organizers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Increased min width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased min width */
   gap: 2rem; /* Added more space between items */
   justify-content: center; /* Centers items in the container */
 }
@@ -213,22 +201,7 @@ section {
 }
 
 
-
-
-
-
-
-
-
 /* Sponsors Section */
-
-.sponsors-container {
-  max-width: 1000px; /* Adjust width as needed */
-  margin: 0 auto;
-  padding: 0 2rem; /* Adds padding on left and right */
-}
-
-
 .sponsors {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -264,18 +237,6 @@ section {
 
 
 /* School Section */
-.school-container {
-  max-width: 1000px; /* Adjust width as needed */
-  margin: 0 auto;
-  padding: 0 2rem; /* Adds padding on left and right */
-}
-
-#school h2 {
-  color: #041e42;
-  text-align: left;
-  padding-left: 2rem; /* Keeps title aligned left */
-}
-
 .content-wrapper {
   display: flex;
   align-items: center;
@@ -316,23 +277,7 @@ section {
 }
 
 
-
-
-
-
 /* Speakers Section */
-.speakers-container {
-  max-width: 1000px; /* Adjust width as needed */
-  margin: 0 auto;
-  padding: 0 2rem; /* Adds padding on left and right */
-}
-
-#speakers h2 {
-  color: #041e42;
-  text-align: left;
-  padding-left: 2rem; /* Keeps title aligned left */
-}
-
 .speakers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -372,22 +317,7 @@ section {
 }
 
 
-
-
-
 /* Schedule Section */
-.schedule-container {
-  max-width: 1000px; /* Adjust width as needed */
-  margin: 0 auto;
-  padding: 0 2rem; /* Adds padding on left and right */
-}
-
-#schedule h2 {
-  color: #041e42;
-  text-align: left;
-  padding-left: 2rem; /* Keeps title aligned left */
-}
-
 .schedule-list {
   list-style: none;
   padding: 0;
@@ -400,7 +330,6 @@ section {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
-
 
 .schedule-table {
   width: 100%;
@@ -425,32 +354,8 @@ section {
   font-style: italic;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h2 {
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-
 
 /* Arrive Section */
-.arrive-container {
-  max-width: 1000px; /* Adjust width as needed */
-  margin: 0 auto;
-  padding: 0 2rem; /* Adds padding on left and right */
-}
-
-#arrive h2 {
-  color: #041e42;
-  text-align: left;
-  padding-left: 2rem; /* Keeps title aligned left */
-}
-
 .content-wrapper {
   display: flex;
   align-items: center;
@@ -491,31 +396,10 @@ h2 {
 }
 
 
-/* accomodation Section */
-.accomodation-container {
-  max-width: 1000px; /* Adjust width as needed */
-  margin: 0 auto;
-  padding: 0 2rem; /* Adds padding on left and right */
-}
-
-
-#accomodation h2 {
-  color: #041e42;
-  text-align: left;
-  padding-left: 1rem;
-}
-
-
-
-#register h2 {
-  color: #041e42;
-  text-align: left;
-  padding-left: 1rem;
-}
-
+/* accommodation Section */
 .btn {
-  padding: 1rem 2rem; /* Bigger button */
-  font-size: 1.2rem; /* Larger text */
+  padding: 0.75rem 2.5rem; /* Bigger button */
+  font-size: 1rem; /* Larger text */
   background: #004aad;
   color: #fff;
   border: none;
@@ -535,9 +419,6 @@ h2 {
   text-align: center;
   margin-top: 20px; /* Add spacing if needed */
 }
-
-
-
 
 
 /* Footer */
