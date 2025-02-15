@@ -257,7 +257,7 @@ section {
 }
 
 .building img {
-  max-width: 100%; /* Makes image responsive */
+  max-width: 75%; /* Makes image responsive */
   height: auto;
   border-radius: 10px;
 }
