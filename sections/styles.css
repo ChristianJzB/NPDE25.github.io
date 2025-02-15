@@ -10,11 +10,10 @@ body {
   align-items: center;      /* Centers vertically */
 }
 
-
-
 section {
-  margin-bottom: 5rem; /* Add space between sections */
+  margin-bottom: 3rem; /* Add space between sections */
 }
+
 
 /* Hero Section */
 .hero {
@@ -27,7 +26,6 @@ section {
   padding: 6rem 2rem; /* More padding for a prominent hero section */
   text-align: center;
 }
-
 
 .hero::before {
   content: '';
@@ -86,6 +84,7 @@ section {
   font-weight: bold;
 }
 
+
 /* Navigation Links */
 .nav-links {
   list-style: none;
@@ -111,6 +110,7 @@ section {
   opacity: 0.8;
 }
 
+
 /* Mobile Menu */
 .menu-toggle {
   display: none;
@@ -118,6 +118,7 @@ section {
   color: white;
   cursor: pointer;
 }
+
 
 /* Responsive Navigation */
 @media screen and (max-width: 768px) {
