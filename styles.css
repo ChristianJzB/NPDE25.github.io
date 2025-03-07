@@ -133,11 +133,6 @@ section {
     padding: 1rem;
   }
 
-  .schedule-list {
-    width: 100%;
-    max-width: none; /* Allow full width on mobile */
-  }
-
   .nav-links {
     display: none;
     flex-direction: column;
@@ -371,6 +366,23 @@ section {
   font-style: italic;
 }
 
+@media (max-width: 768px) {
+  .schedule-list {
+    width: 100%;
+    max-width: none;
+  }
+
+  .schedule-table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 4px;
+    font-size: 0.9rem;
+  }
+}
 
 /* Arrive Section */
 .content-wrapper {
