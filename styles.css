@@ -128,13 +128,18 @@ section {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   /* Hide nav links by default */
+  .navbar, .hero, .footer {
+    width: 100%;
+    padding: 1rem;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background: #004aad;
     text-align: center;
     padding: 1rem 0;
