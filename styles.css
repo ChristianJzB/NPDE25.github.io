@@ -90,7 +90,6 @@ section {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin-left: auto;
   padding: 0;
 }
 
@@ -123,7 +122,6 @@ section {
   font-size: 2rem;
   color: white;
   cursor: pointer;
-  margin-left: auto;
 }
 
 
