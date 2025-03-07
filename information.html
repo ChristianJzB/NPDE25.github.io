@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Numerical Analysis of PDEs, Optimization and UQ: A MAC-MIGS Summer School</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
   <header class="hero">
@@ -58,31 +60,7 @@
 
         </div>
         
-        <div class="map">
-          <gmp-map
-              center="55.9216819,-3.1736698"
-              zoom="11"
-              map-id="DEMO_MAP_ID"
-              style="height: 400px"
-            >
-              <gmp-advanced-marker
-                position="55.9216819,-3.1736698"
-                title="James Clerk Maxwell Building"
-              ></gmp-advanced-marker>
-            </gmp-map>
-
-            <!-- 
-              The `defer` attribute causes the script to execute after the full HTML
-              document has been parsed. For non-blocking uses, avoiding race conditions,
-              and consistent behavior across browsers, consider loading using Promises. See
-              https://developers.google.com/maps/documentation/javascript/load-maps-js-api
-              for more information.
-              -->
-            <script
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta"
-              defer
-            ></script>
-        </div>
+        <div id="map" style="width: 500px; height: 500px;"></div>
       </div>
     </div>
   </section>
@@ -122,4 +100,16 @@
   </footer>
 
 </body>
+
+<script>
+  var map = L.map('map').setView([55.9216819,-3.1736698], 11);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  L.marker([55.9216819,-3.1736698]).addTo(map)
+      .bindPopup('JCMB');
+</script>
+
 </html>

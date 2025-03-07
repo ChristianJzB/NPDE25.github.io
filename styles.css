@@ -369,18 +369,6 @@ section {
   max-width: 600px; /* Adjust width for readability */
 }
 
-.map {
-  flex: 1; /* Makes the image take up available space */
-  display: flex;
-  justify-content: flex-end; /* Pushes the image to the right */
-}
-
-.map img {
-  max-width: 100%; /* Makes image responsive */
-  height: auto;
-  border-radius: 10px;
-}
-
 @media (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
