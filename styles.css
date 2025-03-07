@@ -133,6 +133,11 @@ section {
     padding: 1rem;
   }
 
+  .schedule-list {
+    width: 100%;
+    max-width: none; /* Allow full width on mobile */
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
