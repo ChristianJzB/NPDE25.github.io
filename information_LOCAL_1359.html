@@ -18,10 +18,6 @@
 
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <!-- Menu Toggle for Mobile -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">☰</label>
-
     <ul class="nav-links">
       <li><a href="index.html">About</a></li>
       <li><a href="summer_school.html">Summer School</a></li>
@@ -47,14 +43,15 @@
     <div class="container">
       <h2 class="section-title">How to get to James Clerk Maxwell Building</h2>
 
-      <div class="content-with-map">
+      <div class="text-with-map">
         <div class="text-content">
   
         <p>The event will take place at JCMB on the King's Buildings campus.</p>
         <p>The address is: <br> JCMB <br> Peter Guthrie Tait Road <br> Edinburgh EH9 3FD <br> United Kingdom</p>
+
         </div>
         
-        <div id="map" style="width: 50%; height: 250px; border-radius: 10px;"></div>
+        <div id="map" style="width: 45%; height: 250px; border-radius: 10px;"></div>
       </div>
         
       <p>To get to Edinburgh:
@@ -63,7 +60,7 @@
           <li>By train: The closest train station is Edinburgh Waverley in the city centre. From there, you can reach the campus by bus.</li>
           <li>By car: The campus lies north of the Edinburgh Bypass (A720). Take the exit onto A701 and follow until Mayfield Road. Turn left and follow until turning left again into Max Born Crescent. Follow until Peter Guthrie Tait Road.</li>
         </ul>
-      See also <a href="https://transport.ed.ac.uk/travelling-here/kings-buildings" target="_blank">Travelling to the King's Buildings</a> for transport information and a campus map.
+      See also <a href="https://transport.ed.ac.uk/travelling-here/kings-buildings">https://transport.ed.ac.uk/travelling-here/kings-buildings</a> for transport information and a campus map.
       </p>
     </div>
   </section>
@@ -81,7 +78,7 @@
       <p>There are plenty of great options for dinner in the area, including:<br>Wee Greek Kitchen, Haldi, Salisbury Arms, Old Bell Inn, Matto Pizza, Korean BBQ, Verdo, Sofia's Lounge, Brass Monkey, and Leslie's Bar.
       </p>
       
-      <b>Place to visit in Edinburgh</b>
+      <b>Tour around Edinburgh</b>
       <p>On Wednesday afternoon, we plan to go for a small tour of Edinburgh. In case you can't join/want to explore Edinburgh on your own, here are some suggestions:
       </p>
       <ul>
@@ -105,7 +102,7 @@
 </body>
 
 <script>
-  var map = L.map('map').setView([55.9216819,-3.1736698], 11.5);
+  var map = L.map('map').setView([55.9216819,-3.1736698], 11);
 
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

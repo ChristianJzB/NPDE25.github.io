@@ -256,6 +256,13 @@ section {
   justify-content: space-between; /* Keeps text on the left, image on the right */
 }
 
+.content-with-map {
+  display: flex;
+  align-items: left;
+  gap: 40px; /* Space between text and image */
+  justify-content: space-between; /* Keeps text on the left, image on the right */
+}
+
 .text-content {
   flex: 1; /* Makes the text take up available space */
   max-width: 600px; /* Adjust width for readability */
