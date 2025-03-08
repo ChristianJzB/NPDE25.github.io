@@ -56,7 +56,7 @@ section {
 /* Navigation Bar (Below Hero) */
 .navbar {
   background: #041e42;
-  padding: 1rem 2rem; /* Match title padding */
+  padding: 0.5rem 2rem; /* Match title padding */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,7 +119,7 @@ section {
 /* Menu Icon */
 .menu-icon {
   display: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   cursor: pointer;
 }
@@ -137,7 +137,7 @@ section {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 3.25rem;
     left: 0;
     width: 100vw;
     background: #004aad;
